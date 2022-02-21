@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Outfit:wght@300;400;600&family=Poppins:wght@700&display=swap");
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  --Very-dark-blue1: hsl(217, 54%, 11%);
+  --Very-dark-blue2: hsl(216, 50%, 16%);
+  --Very-dark-blue3: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--Very-dark-blue1);
+  font-family: "Outfit", sans-serif;
+  color: var(--White);
+  font-size: 1.125rem;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  position: absolute;
+  bottom: 5.3rem;
+  width: 350px;
+  background-color: var(--Very-dark-blue2);
+  border-radius: 20px;
+  box-shadow: 5px 15px 10px 10px var(--Very-dark-blue1);
+  height: 600px;
+}
+
+.card-h1:hover,
+.card-h1:focus,
+.creator-p:hover,
+.creator-p:focus {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.equi-img {
+  margin: 1.5rem 1.5rem;
+  max-width: 305px;
+  border-radius: 10px;
+  color: var(--Cyan);
+  position: relative;
+}
+
+.card-img {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  bottom: 0;
+  right: 0;
+  width: 87%;
+  height: 51%;
+  background: var(--Cyan);
+  opacity: 0;
+  border-radius: 10px;
+  transition: opacity 0.35s;
+}
+
+.icon-view {
+  position: absolute;
+  top: 8rem;
+  left: 8rem;
+  opacity: 1;
+}
+
+.overlay:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.spacing {
+  margin: 1.563rem;
+}
+
+.card-h1 {
+  font-size: 1.35rem;
+  position: absolute;
+  bottom: 14rem;
+}
+
+.card-p {
+  color: var(--Soft-blue);
+  position: absolute;
+  bottom: 9.7rem;
+}
+
+.currency-and-time {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--Very-dark-blue3);
+  padding-bottom: 1.35rem;
+}
+
+.currency,
+.time {
+  display: flex;
+  align-items: center;
+}
+
+.currency-p,
+.time-p {
+  color: var(--Cyan);
+  margin-left: 0.25em;
+}
+
+.time-p {
+  color: var(--Soft-blue);
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.creator-img {
+  width: 30px;
+  margin-right: 1.3rem;
+  border: 1px solid var(--White);
+  border-radius: 1000px;
+}
+
+.creator-p {
+  font-size: 1rem;
+}
+
+.creator-p-color {
+  color: var(--Soft-blue);
+}
