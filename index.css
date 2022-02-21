@@ -32,7 +32,6 @@ body {
 
 .card {
   position: absolute;
-  bottom: 5.3rem;
   width: 350px;
   background-color: var(--Very-dark-blue2);
   border-radius: 20px;
